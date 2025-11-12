@@ -1,0 +1,16 @@
+﻿- Ability System Component (ASC): Attaches to Actor to manage and execute Gameplay Abilities, 
+and handles replication for multiplayer.
+
+- Gameplay Abilities: Character abilities or actions (e.g., attack, jump, buff) written 
+in Blueprint or C++, capable of running in parallel, supporting input, animation, and effects.
+
+- Attribute Sets: Stores gameplay attributes such as Health, Mana, Stamina, making it easy 
+for the system to calculate and replicate.
+
+- Gameplay Effects: Changes attribute values of Attribute Sets 
+(e.g., damage, healing, buff/debuff), can be instantaneous or extended over time.
+
+- Gameplay Tags: A tag system to control status, bind, or activate abilities and effects flexibly.
+
+- Replication & Prediction: GAS fully handles sending status data over the network, 
+allowing for synchronous gameplay and predictable user input (client-side prediction).

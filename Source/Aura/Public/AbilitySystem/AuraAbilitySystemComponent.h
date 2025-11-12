@@ -6,8 +6,10 @@
 #include "AbilitySystemComponent.h"
 #include "AuraAbilitySystemComponent.generated.h"
 
-/**
- * 
+
+/* 
+ * Ability System Component (ASC): Attaches to Actor to manage and execute Gameplay Abilities, 
+ *									and handles replication for multiplayer.
  */
 UCLASS()
 class AURA_API UAuraAbilitySystemComponent : public UAbilitySystemComponent
