@@ -120,13 +120,13 @@
           </mxGeometry>
         </mxCell>
         <mxCell id="2BShQBDZR6Krd0XarQ3t-9" value="- Dedicated Server:&amp;nbsp;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;. No human player&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;. No rendering to a screen but the actions that the player does in the game will be stored and processed but just not displayed on the screen.&amp;nbsp;&lt;br&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="-680" y="100" width="320" height="110" as="geometry" />
+          <mxGeometry x="-540" y="100" width="320" height="110" as="geometry" />
         </mxCell>
         <mxCell id="2BShQBDZR6Krd0XarQ3t-10" value="- Listener Server:&amp;nbsp;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;. Is human player&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;. Host has advantage - No lag&lt;br&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="-680" y="225" width="320" height="110" as="geometry" />
+          <mxGeometry x="-540" y="225" width="320" height="110" as="geometry" />
         </mxCell>
         <mxCell id="2BShQBDZR6Krd0XarQ3t-11" value="- Server is the Authority:&amp;nbsp;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;. &quot;Correct&quot; version of the game&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;white-space: pre;&quot;&gt;&#x9;&lt;/span&gt;. Handle &quot;important&quot; logic,... on the server&lt;br&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="-680" y="360" width="320" height="110" as="geometry" />
+          <mxGeometry x="-540" y="360" width="320" height="110" as="geometry" />
         </mxCell>
         <mxCell id="2BShQBDZR6Krd0XarQ3t-12" value="GameMode" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="80" y="130" width="80" height="20" as="geometry" />
