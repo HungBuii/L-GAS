@@ -482,7 +482,7 @@
         <mxCell id="D852giLZosrhY_r4o6QA-20" value="" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;rounded=0;" edge="1" parent="1">
           <mxGeometry width="50" height="50" relative="1" as="geometry">
             <mxPoint x="40" y="360" as="sourcePoint" />
-            <mxPoint x="1120" y="360" as="targetPoint" />
+            <mxPoint x="1640" y="360" as="targetPoint" />
           </mxGeometry>
         </mxCell>
         <mxCell id="D852giLZosrhY_r4o6QA-21" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;Player Controlled Character&lt;/font&gt;" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" vertex="1" parent="1">
@@ -685,6 +685,12 @@
             <mxPoint x="690" y="890" as="sourcePoint" />
             <mxPoint x="740" y="840" as="targetPoint" />
           </mxGeometry>
+        </mxCell>
+        <mxCell id="SUcA9tO9Dcl60f3V6ICO-1" value="&lt;h1 style=&quot;text-align: center; margin-top: 0px;&quot;&gt;Mixed Replication Mode&lt;/h1&gt;&lt;p&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;- Case 1: For Mixed Replication Mide: The &quot;OwnerActor&#39;s Owner&quot; must be Controller. For Pawn, this is set automatically in PossessBy()&lt;/font&gt;&lt;/p&gt;&lt;p&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;- Case 2: The PlayerState&#39;s Owner is automatically set to the Controller&lt;/font&gt;&lt;/p&gt;&lt;p&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;- Case 3: If your OwnerActor is not the PlayerState, and you use Mixed Replication Mode, you must call SetOwner() on the OwnerActor to set its owner to the Controller&lt;/font&gt;&lt;/p&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1064" y="90" width="590" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="SUcA9tO9Dcl60f3V6ICO-2" value="" style="rounded=1;whiteSpace=wrap;html=1;fillOpacity=0;" vertex="1" parent="1">
+          <mxGeometry x="1054" y="60" width="590" height="220" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
