@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36" version="29.0.3" pages="3">
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36" version="29.0.3" pages="4">
   <diagram name="Definition GAS" id="a-f_YpFzG5-Z_sWn2wq1">
     <mxGraphModel dx="2316" dy="764" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -351,6 +351,62 @@
         </mxCell>
         <mxCell id="2BShQBDZR6Krd0XarQ3t-77" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://icons.diagrams.net/icon-cache1/Unicons_Line_vol_5-2967/question-circle-813.svg" vertex="1" parent="1">
           <mxGeometry x="323" y="403" width="24" height="24" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="HQ4zSsrTWQKjnYaWXLwn" name="Replication Mode">
+    <mxGraphModel dx="1042" dy="535" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="xhQa1BO5WF5rVIvZNRfp-2" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;Replication Mode&lt;/font&gt;" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="40" y="160" width="130" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="xhQa1BO5WF5rVIvZNRfp-3" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;Use case&lt;/font&gt;" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="230" y="160" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="xhQa1BO5WF5rVIvZNRfp-4" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;Description&lt;/font&gt;" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="370" y="160" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="xhQa1BO5WF5rVIvZNRfp-6" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;Full&lt;/font&gt;" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="70" y="210" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="xhQa1BO5WF5rVIvZNRfp-7" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;Mixed&lt;/font&gt;" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="75" y="280" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="xhQa1BO5WF5rVIvZNRfp-8" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;Minimal&lt;/font&gt;" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="75" y="360" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="xhQa1BO5WF5rVIvZNRfp-9" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;Single Player&lt;/font&gt;" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="230" y="210" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="xhQa1BO5WF5rVIvZNRfp-10" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;Multiplayer,&amp;nbsp;&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;Player-Controlled&lt;/font&gt;&lt;/div&gt;" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="215" y="270" width="140" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="xhQa1BO5WF5rVIvZNRfp-11" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;Multiplayer,&amp;nbsp;&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;font-size: 15px;&quot;&gt;AI-Controlled&lt;/font&gt;&lt;/div&gt;" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="215" y="350" width="140" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="xhQa1BO5WF5rVIvZNRfp-12" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;Gameplay Effect are replicated to all clients&lt;/font&gt;" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="370" y="210" width="340" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="xhQa1BO5WF5rVIvZNRfp-13" value="" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="190" y="400" as="sourcePoint" />
+            <mxPoint x="190" y="160" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xhQa1BO5WF5rVIvZNRfp-14" value="" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="369" y="400" as="sourcePoint" />
+            <mxPoint x="369" y="160" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="xhQa1BO5WF5rVIvZNRfp-15" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;Gameplay Effect are replicated to the owning client only. Gameplay Cues and Gameplay Tags replicated to all clients&lt;/font&gt;" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="370" y="260" width="430" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="xhQa1BO5WF5rVIvZNRfp-16" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;Gameplay Effect are not replicated. Gameplay Cues and Gameplay Tags replicated to all clients&lt;/font&gt;" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="380" y="340" width="340" height="80" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
