@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36" version="29.0.3" pages="4">
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36" version="29.0.3" pages="5">
   <diagram name="Definition GAS" id="a-f_YpFzG5-Z_sWn2wq1">
     <mxGraphModel dx="2316" dy="764" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -407,6 +407,284 @@
         </mxCell>
         <mxCell id="xhQa1BO5WF5rVIvZNRfp-16" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;Gameplay Effect are not replicated. Gameplay Cues and Gameplay Tags replicated to all clients&lt;/font&gt;" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="380" y="340" width="340" height="80" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="AZ_fNwj6756Tzcjdcrin" name="Init Ability Actor Info">
+    <mxGraphModel dx="1226" dy="629" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="D852giLZosrhY_r4o6QA-1" value="Abiliity System Component" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="120" y="80" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="D852giLZosrhY_r4o6QA-2" value="AActor&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Owner Actor&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="40" y="200" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="D852giLZosrhY_r4o6QA-3" value="AActor&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Avatar Actor&lt;/div&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="200" y="200" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="D852giLZosrhY_r4o6QA-5" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="D852giLZosrhY_r4o6QA-1" target="D852giLZosrhY_r4o6QA-2">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="40" y="370" as="sourcePoint" />
+            <mxPoint x="90" y="320" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D852giLZosrhY_r4o6QA-6" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="D852giLZosrhY_r4o6QA-1" target="D852giLZosrhY_r4o6QA-3">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="110" y="440" as="sourcePoint" />
+            <mxPoint x="160" y="390" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D852giLZosrhY_r4o6QA-7" value="" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="360" y="360" as="sourcePoint" />
+            <mxPoint x="360" y="40" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D852giLZosrhY_r4o6QA-8" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;Enemy&lt;/font&gt;" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="400" y="70" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="D852giLZosrhY_r4o6QA-13" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="D852giLZosrhY_r4o6QA-9" target="D852giLZosrhY_r4o6QA-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="D852giLZosrhY_r4o6QA-9" value="Pawn" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="414" y="120" width="30" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="D852giLZosrhY_r4o6QA-11" value="Abiliity System Component" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="369" y="240" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="D852giLZosrhY_r4o6QA-14" value="Owner Actor" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="470" y="100" width="70" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="D852giLZosrhY_r4o6QA-15" value="Avatar Actor" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="470" y="160" width="70" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="D852giLZosrhY_r4o6QA-16" value="owner of the class containing the ability system component" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;size=13;" vertex="1" parent="1">
+          <mxGeometry x="570" y="40" width="110" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="D852giLZosrhY_r4o6QA-17" value="representation in the world associated with this ability system component" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;size=13;" vertex="1" parent="1">
+          <mxGeometry x="570" y="150" width="130" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="D852giLZosrhY_r4o6QA-18" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="D852giLZosrhY_r4o6QA-14" target="D852giLZosrhY_r4o6QA-16">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="500" y="320" as="sourcePoint" />
+            <mxPoint x="550" y="270" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D852giLZosrhY_r4o6QA-19" value="" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" target="D852giLZosrhY_r4o6QA-17">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="540" y="180" as="sourcePoint" />
+            <mxPoint x="610" y="310" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D852giLZosrhY_r4o6QA-20" value="" style="endArrow=none;dashed=1;html=1;dashPattern=1 3;strokeWidth=2;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="40" y="360" as="sourcePoint" />
+            <mxPoint x="1120" y="360" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D852giLZosrhY_r4o6QA-21" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;Player Controlled Character&lt;/font&gt;" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="795.5" y="50" width="129" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="D852giLZosrhY_r4o6QA-23" value="Pawn" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="795.5" y="200" width="30" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="D852giLZosrhY_r4o6QA-24" value="Abiliity System Component" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="870" y="210" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="D852giLZosrhY_r4o6QA-25" value="Owner Actor" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="910" y="110" width="70" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="D852giLZosrhY_r4o6QA-26" value="Avatar Actor" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="700" y="220" width="70" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="D852giLZosrhY_r4o6QA-31" value="PS" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.database;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="840" y="110" width="40" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="D852giLZosrhY_r4o6QA-32" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="D852giLZosrhY_r4o6QA-31" target="D852giLZosrhY_r4o6QA-23">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="930" y="360" as="sourcePoint" />
+            <mxPoint x="980" y="310" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D852giLZosrhY_r4o6QA-33" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="D852giLZosrhY_r4o6QA-31" target="D852giLZosrhY_r4o6QA-24">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1020" y="370" as="sourcePoint" />
+            <mxPoint x="1070" y="320" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D852giLZosrhY_r4o6QA-34" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;dashed=1;" edge="1" parent="1" source="D852giLZosrhY_r4o6QA-9" target="D852giLZosrhY_r4o6QA-14">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="590" y="310" as="sourcePoint" />
+            <mxPoint x="640" y="260" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D852giLZosrhY_r4o6QA-35" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;dashed=1;" edge="1" parent="1" source="D852giLZosrhY_r4o6QA-9">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="560" y="310" as="sourcePoint" />
+            <mxPoint x="470" y="180" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D852giLZosrhY_r4o6QA-36" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;dashed=1;" edge="1" parent="1" source="D852giLZosrhY_r4o6QA-31" target="D852giLZosrhY_r4o6QA-25">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="1070" y="275" as="sourcePoint" />
+            <mxPoint x="1111" y="250" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="D852giLZosrhY_r4o6QA-37" value="" style="endArrow=classic;html=1;rounded=0;exitX=0.5;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;dashed=1;" edge="1" parent="1" source="D852giLZosrhY_r4o6QA-23" target="D852giLZosrhY_r4o6QA-26">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="840" y="325" as="sourcePoint" />
+            <mxPoint x="881" y="300" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FKOLOhWnb8C5xH9wuBda-1" value="&lt;font style=&quot;font-size: 20px;&quot;&gt;=&amp;gt; Must be done after possession (The controller has been set for the Pawn)&lt;/font&gt;" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="159" y="380" width="741" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="FKOLOhWnb8C5xH9wuBda-2" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;Player-Controlled Character (2 cases)&lt;/font&gt;" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="65" y="450" width="270" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="FKOLOhWnb8C5xH9wuBda-3" value="Pawn" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="40" y="500" width="30" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="FKOLOhWnb8C5xH9wuBda-4" value="Abiliity System Component" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="110" y="500" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="FKOLOhWnb8C5xH9wuBda-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=-0.006;entryY=0.414;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="FKOLOhWnb8C5xH9wuBda-3" target="FKOLOhWnb8C5xH9wuBda-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FKOLOhWnb8C5xH9wuBda-6" value="Server" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="30" y="635" width="70" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="FKOLOhWnb8C5xH9wuBda-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="FKOLOhWnb8C5xH9wuBda-7" target="FKOLOhWnb8C5xH9wuBda-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FKOLOhWnb8C5xH9wuBda-7" value="Pawn" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="140" y="620" width="30" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="FKOLOhWnb8C5xH9wuBda-8" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="FKOLOhWnb8C5xH9wuBda-6" target="FKOLOhWnb8C5xH9wuBda-7">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-60" y="685" as="sourcePoint" />
+            <mxPoint x="-10" y="635" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="FKOLOhWnb8C5xH9wuBda-9" value="ASC Lives on the Pawn" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="40" y="570" width="170" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="FKOLOhWnb8C5xH9wuBda-10" value="PossessedBy" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="210" y="630" width="90" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="fphf0HXM5Zd454E4NM2W-3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="FKOLOhWnb8C5xH9wuBda-12" target="fphf0HXM5Zd454E4NM2W-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="FKOLOhWnb8C5xH9wuBda-12" value="Client" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="30" y="737" width="70" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="FKOLOhWnb8C5xH9wuBda-16" value="AcknowledgePossession" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="210" y="732" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="fphf0HXM5Zd454E4NM2W-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="fphf0HXM5Zd454E4NM2W-1" target="FKOLOhWnb8C5xH9wuBda-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fphf0HXM5Zd454E4NM2W-1" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://icons.diagrams.net/icon-cache1/Vivid_-_Vibrant_Solid_Fill_Flat_Style-2565/controller-997.svg" vertex="1" parent="1">
+          <mxGeometry x="140" y="728" width="38" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="fphf0HXM5Zd454E4NM2W-6" value="Abiliity System Component" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="110" y="830" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="fphf0HXM5Zd454E4NM2W-8" value="Server" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="30" y="965" width="70" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="fphf0HXM5Zd454E4NM2W-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="fphf0HXM5Zd454E4NM2W-10" target="fphf0HXM5Zd454E4NM2W-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fphf0HXM5Zd454E4NM2W-10" value="Pawn" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="140" y="950" width="30" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="fphf0HXM5Zd454E4NM2W-11" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="fphf0HXM5Zd454E4NM2W-8" target="fphf0HXM5Zd454E4NM2W-10">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-60" y="1015" as="sourcePoint" />
+            <mxPoint x="-10" y="965" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fphf0HXM5Zd454E4NM2W-12" value="ASC Lives on the PlayerState" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="40" y="900" width="170" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="fphf0HXM5Zd454E4NM2W-13" value="PossessedBy" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="210" y="960" width="90" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="fphf0HXM5Zd454E4NM2W-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="fphf0HXM5Zd454E4NM2W-15" target="fphf0HXM5Zd454E4NM2W-18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fphf0HXM5Zd454E4NM2W-15" value="Client" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="30" y="1067" width="70" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="fphf0HXM5Zd454E4NM2W-16" value="OnRep_PlayerState" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="210" y="1062" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="fphf0HXM5Zd454E4NM2W-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="fphf0HXM5Zd454E4NM2W-18" target="fphf0HXM5Zd454E4NM2W-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fphf0HXM5Zd454E4NM2W-18" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://icons.diagrams.net/icon-cache1/Vivid_-_Vibrant_Solid_Fill_Flat_Style-2565/controller-997.svg" vertex="1" parent="1">
+          <mxGeometry x="140" y="1058" width="38" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="fphf0HXM5Zd454E4NM2W-20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="fphf0HXM5Zd454E4NM2W-19" target="fphf0HXM5Zd454E4NM2W-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fphf0HXM5Zd454E4NM2W-19" value="PS" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.database;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="40" y="840" width="40" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="fphf0HXM5Zd454E4NM2W-21" value="" style="rounded=1;whiteSpace=wrap;html=1;strokeOpacity=100;fillOpacity=0;" vertex="1" parent="1">
+          <mxGeometry y="480" width="400" height="290" as="geometry" />
+        </mxCell>
+        <mxCell id="fphf0HXM5Zd454E4NM2W-22" value="" style="rounded=1;whiteSpace=wrap;html=1;strokeOpacity=100;fillOpacity=0;" vertex="1" parent="1">
+          <mxGeometry y="780" width="400" height="330" as="geometry" />
+        </mxCell>
+        <mxCell id="fphf0HXM5Zd454E4NM2W-23" value="&lt;font style=&quot;font-size: 15px;&quot;&gt;AI-Controlled Character (In this case, Enemy is the most suitable for this project)&lt;/font&gt;" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="560" y="450" width="560" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="fphf0HXM5Zd454E4NM2W-24" value="Pawn" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="650.5" y="500" width="30" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="fphf0HXM5Zd454E4NM2W-25" value="Abiliity System Component" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="720.5" y="500" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="fphf0HXM5Zd454E4NM2W-26" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=-0.006;entryY=0.414;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="fphf0HXM5Zd454E4NM2W-24" target="fphf0HXM5Zd454E4NM2W-25">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fphf0HXM5Zd454E4NM2W-27" value="Server" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="640.5" y="635" width="70" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="fphf0HXM5Zd454E4NM2W-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="fphf0HXM5Zd454E4NM2W-29" target="fphf0HXM5Zd454E4NM2W-32">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="fphf0HXM5Zd454E4NM2W-29" value="Pawn" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;" vertex="1" parent="1">
+          <mxGeometry x="750.5" y="660" width="30" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="fphf0HXM5Zd454E4NM2W-30" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="fphf0HXM5Zd454E4NM2W-27" target="fphf0HXM5Zd454E4NM2W-29">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="550.5" y="685" as="sourcePoint" />
+            <mxPoint x="600.5" y="635" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="fphf0HXM5Zd454E4NM2W-31" value="ASC Lives on the Pawn" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="650.5" y="570" width="170" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="fphf0HXM5Zd454E4NM2W-32" value="BeginPlay" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="820.5" y="670" width="90" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="fphf0HXM5Zd454E4NM2W-34" value="Client" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="640.5" y="737" width="70" height="20" as="geometry" />
+        </mxCell>
+        <mxCell id="fphf0HXM5Zd454E4NM2W-38" value="" style="rounded=1;whiteSpace=wrap;html=1;strokeOpacity=100;fillOpacity=0;" vertex="1" parent="1">
+          <mxGeometry x="590" y="490" width="330" height="290" as="geometry" />
+        </mxCell>
+        <mxCell id="fphf0HXM5Zd454E4NM2W-40" value="" style="endArrow=classic;html=1;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="fphf0HXM5Zd454E4NM2W-34" target="fphf0HXM5Zd454E4NM2W-29">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="690" y="890" as="sourcePoint" />
+            <mxPoint x="740" y="840" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
