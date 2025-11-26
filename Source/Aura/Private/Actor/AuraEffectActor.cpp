@@ -35,3 +35,11 @@ void AAuraEffectActor::ApplyEffectToTarget(AActor* TargetActor, TSubclassOf<UGam
 	TargetASC->ApplyGameplayEffectSpecToSelf(*EffectSpecHandle.Data.Get()); // Applies a previously created gameplay effect spec to this component
 }
 
+void AAuraEffectActor::OnOverlap(AActor* TargetActor)
+{
+}
+
+void AAuraEffectActor::OnEndOverlap(AActor* TargetActor)
+{
+}
+
