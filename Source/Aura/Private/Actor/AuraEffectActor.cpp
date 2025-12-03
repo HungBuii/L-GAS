@@ -29,10 +29,36 @@ void AAuraEffectActor::ApplyEffectToTarget(AActor* TargetActor, TSubclassOf<UGam
 	if (TargetASC == nullptr) return;
 	
 	check(GameplayEffectClass);
+	/*
+	 *	FGameplayEffectContext: Data structure that stores an instigator and related data, such as positions and targets. It is passed throughout effect execution 
+	 *	so it is a great place to track transient information about an execution.
+	 *	
+	 *	FGameplayEffectContextHandle: Handle that wraps a FGameplayEffectContext or subclass, to allow it to be polymorphic and replicate properly
+	 *	
+	 *	MakeEffectContext(): Create an EffectContext for the owner of this AbilitySystemComponent
+	 */
 	FGameplayEffectContextHandle EffectContextHandle = TargetASC->MakeEffectContext();
 	EffectContextHandle.AddSourceObject(this);
+	
+	/*
+	 *	FGameplayEffectSpec(GameplayEffect Specification): 
+	 *		+ What UGameplayEffect (const data)
+	 *		+ What Level
+	 *		+ Who instigated
+	 *  FGameplayEffectSpec is modifiable. We start with initial conditions and modifications be applied to it. In this sense, it is stateful/mutable but it
+	 *	is still distinct from an FActiveGameplayEffect which in an applied instance of an FGameplayEffectSpec.
+	 *
+	 *	FGameplayEffectSpecHandle: Allows blueprints to generate a GameplayEffectSpec once and then reference it by handle, to apply it multiple times/multiple targets.
+	 *	
+	 *	MakeOutgoingSpec(): Get an outgoing GameplayEffectSpec that is ready to be applied to other things.
+	 */
 	FGameplayEffectSpecHandle EffectSpecHandle = TargetASC->MakeOutgoingSpec(GameplayEffectClass, ActorLevel, EffectContextHandle);
-	const FActiveGameplayEffectHandle ActiveEffectHandle = TargetASC->ApplyGameplayEffectSpecToSelf(*EffectSpecHandle.Data.Get()); // Applies a previously created gameplay effect spec to this component
+	
+	/* 
+	 * FActiveGameplayEffectHandle: This handle is required for things outside of FActiveGameplayEffectsContainer to refer to a specific active GameplayEffect
+	 * 
+	 * ApplyGameplayEffectSpecToSelf(): Applies a previously created gameplay effect spec to this component */
+	const FActiveGameplayEffectHandle ActiveEffectHandle = TargetASC->ApplyGameplayEffectSpecToSelf(*EffectSpecHandle.Data.Get()); 
 
 	const bool bIsInfinite = (EffectSpecHandle.Data.Get()->Def.Get()->DurationPolicy == EGameplayEffectDurationType::Infinite);
 	if (bIsInfinite && InfiniteEffectRemovalPolicy == EEffectRemovalPolicy::RemoveOnEndOverlap)
