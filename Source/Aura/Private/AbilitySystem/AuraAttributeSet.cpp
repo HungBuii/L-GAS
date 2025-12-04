@@ -49,10 +49,28 @@ void UAuraAttributeSet::PreAttributeChange(const FGameplayAttribute& Attribute, 
 void UAuraAttributeSet::SetEffectProperties(const FGameplayEffectModCallbackData& Data, FEffectProperties& Props) const
 {
 	// Source = causer of the effect, Target = target of the effect (owner of this AttributeSet)
-
+	
+	/*
+	 *	FGameplayEffectModCallbackData: A struct that provides detailed data when a Gameplay Effect changes an attribute 
+	 *	(Gameplay Attribute) in the Gameplay Ability System (GAS).
+	 *	
+	 *	EffectSpec: The spec that the mod came from (FGameplayEffectModCallbackData)
+	 *	
+	 *	EffectContext: This tells us how we got here (who / what applied us)
+	 */
 	Props.EffectContextHandle = Data.EffectSpec.GetContext();
+	/*
+	 *	GetOriginalInstigatorAbilitySystemComponent(): Returns the ability system component of 
+	 *	the instigator that started the whole chain
+	 */
 	Props.SourceASC = Props.EffectContextHandle.GetOriginalInstigatorAbilitySystemComponent();
-
+	
+	/*
+	 *	AbilityActorInfo: Cached off data about the owning actor that abilities will need to 
+	 *	frequently access (movement component, mesh component, anim instance, etc)
+	 *	
+	 *	TSharedPtr<FGameplayAbilityActorInfo> AbilityActorInfo
+	 */
 	if (IsValid(Props.SourceASC) && Props.SourceASC->AbilityActorInfo.IsValid() && 
 		Props.SourceASC->AbilityActorInfo->AvatarActor.IsValid())
 	{
@@ -71,6 +89,9 @@ void UAuraAttributeSet::SetEffectProperties(const FGameplayEffectModCallbackData
 		}
 	}
 	
+	/*
+	 *	Target: Target we intend to apply to ... (FGameplayEffectModCallbackData)
+	 */
 	if (Data.Target.AbilityActorInfo.IsValid() && Data.Target.AbilityActorInfo->AvatarActor.IsValid())
 	{
 		Props.TargetAvatarActor = Data.Target.AbilityActorInfo->AvatarActor.Get();
