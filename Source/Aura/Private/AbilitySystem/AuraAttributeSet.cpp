@@ -28,17 +28,21 @@ void UAuraAttributeSet::GetLifetimeReplicatedProps(TArray<class FLifetimePropert
 
 void UAuraAttributeSet::PreAttributeChange(const FGameplayAttribute& Attribute, float& NewValue)
 {
+	// Does not permanently change the modifier, just the value returned from querying the modifier (change CurrentValue)
+	
 	Super::PreAttributeChange(Attribute, NewValue);
 
 	if (Attribute == GetHealthAttribute())
 	{
-		UE_LOG(LogTemp, Warning, TEXT("Health Added: %f"), NewValue - GetHealth());
 		NewValue = FMath::Clamp(NewValue, 0.f, GetMaxHealth());
+		UE_LOG(LogTemp, Warning, TEXT("Health Changed: %f"), NewValue - GetHealth());
+		UE_LOG(LogTemp, Warning, TEXT("Health Result: %f"), NewValue);
 	}
 	if (Attribute == GetManaAttribute())
 	{
-		UE_LOG(LogTemp, Warning, TEXT("Mana Added: %f"), NewValue - GetMana());
 		NewValue = FMath::Clamp(NewValue, 0.f, GetMaxMana());
+		UE_LOG(LogTemp, Warning, TEXT("Mana Changed: %f"), NewValue - GetMana());
+		UE_LOG(LogTemp, Warning, TEXT("Mana Result: %f"), NewValue);
 	}
 }
 
