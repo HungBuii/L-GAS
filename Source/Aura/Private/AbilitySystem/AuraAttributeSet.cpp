@@ -103,6 +103,9 @@ void UAuraAttributeSet::SetEffectProperties(const FGameplayEffectModCallbackData
 
 void UAuraAttributeSet::PostGameplayEffectExecute(const struct FGameplayEffectModCallbackData& Data)
 {
+	// Called just after a GameplayEffect is executed to modify the "base value" of 
+	// an attribute. No more changes can be made. Note this is only called during an 'execute'.
+	
 	Super::PostGameplayEffectExecute(Data);
 
 	FEffectProperties Props;
