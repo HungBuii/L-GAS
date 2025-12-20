@@ -10,7 +10,7 @@
 
 UAuraAttributeSet::UAuraAttributeSet()
 {
-	InitHealth(50.f);
+	InitHealth(10.f);
 	InitMaxHealth(100.f);
 	InitMana(10.f);
 	InitMaxMana(50.f);
@@ -39,13 +39,13 @@ void UAuraAttributeSet::PreAttributeChange(const FGameplayAttribute& Attribute, 
 
 	if (Attribute == GetHealthAttribute())
 	{
-		NewValue = FMath::Clamp(NewValue, 0.f, GetMaxHealth());
+		// NewValue = FMath::Clamp(NewValue, 0.f, GetMaxHealth());
 		UE_LOG(LogTemp, Warning, TEXT("Health Changed: %f"), NewValue - GetHealth());
 		UE_LOG(LogTemp, Warning, TEXT("Health Result: %f"), NewValue);
 	}
 	if (Attribute == GetManaAttribute())
 	{
-		NewValue = FMath::Clamp(NewValue, 0.f, GetMaxMana());
+		// NewValue = FMath::Clamp(NewValue, 0.f, GetMaxMana());
 		UE_LOG(LogTemp, Warning, TEXT("Mana Changed: %f"), NewValue - GetMana());
 		UE_LOG(LogTemp, Warning, TEXT("Mana Result: %f"), NewValue);
 	}
@@ -121,14 +121,14 @@ void UAuraAttributeSet::PostGameplayEffectExecute(const struct FGameplayEffectMo
 		// GEngine->AddOnScreenDebugMessage(1, 3.f, FColor::Red, 
 		// 	FString::Printf(TEXT("Health: %f"), GetHealth()));
 		
-		SetHealth(FMath::Clamp(GetHealth(), 0.f, GetMaxHealth()));
+		// SetHealth(FMath::Clamp(GetHealth(), 0.f, GetMaxHealth()));
 	}
 	if (Data.EvaluatedData.Attribute == GetManaAttribute())
 	{
 		// GEngine->AddOnScreenDebugMessage(1, 3.f, FColor::Red, 
 		// 	FString::Printf(TEXT("Health: %f"), GetHealth()));
     		
-		SetMana(FMath::Clamp(GetMana(), 0.f, GetMaxMana()));
+		// SetMana(FMath::Clamp(GetMana(), 0.f, GetMaxMana()));
 	}
 }
 
