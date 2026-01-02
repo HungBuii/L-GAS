@@ -15,6 +15,7 @@ UAuraAttributeSet::UAuraAttributeSet()
 
 void UAuraAttributeSet::GetLifetimeReplicatedProps(TArray<class FLifetimeProperty>& OutLifetimeProps) const
 {
+	/* GetLifetimeReplicatedProps(): Returns properties that are replicated for the lifetime of the actor channel */
 	Super::GetLifetimeReplicatedProps(OutLifetimeProps);
 	
 	// Primary Attributes
