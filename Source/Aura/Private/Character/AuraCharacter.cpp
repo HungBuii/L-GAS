@@ -47,8 +47,10 @@ int AAuraCharacter::GetPlayerLevel()
 
 void AAuraCharacter::InitAbilityActorInfo()
 {
+	// PlayerState
 	AAuraPlayerState* AuraPlayerState = GetPlayerState<AAuraPlayerState>();
 	check(AuraPlayerState);
+	
 	/*
 	 *	InitAbilityActorInfo(): the structure that holds information about who we are acting on and who controls us.
 	 *	
@@ -57,13 +59,20 @@ void AAuraCharacter::InitAbilityActorInfo()
 	 *	AvatarActor: is what physical actor in the world we are acting on. Usually a Pawn but it 
 	 *	could be a Tower, Building, Turret, etc, may be the same as Owner
 	 */
+	
 	AuraPlayerState->GetAbilitySystemComponent()->InitAbilityActorInfo(AuraPlayerState, this);
 	Cast<UAuraAbilitySystemComponent>(AuraPlayerState->GetAbilitySystemComponent())->AbilityActorInfoSet();
+
+	// AbilitySystemComponent
 	AbilitySystemComponent = AuraPlayerState->GetAbilitySystemComponent();
+
+	// AttributeSet
 	AttributeSet = AuraPlayerState->GetAttributeSet();
 
+	// PlayerController
 	if (AAuraPlayerController* AuraPlayerController = Cast<AAuraPlayerController>(GetController()))
 	{
+		// HUD
 		if (AAuraHUD* AuraHUD = Cast<AAuraHUD>(AuraPlayerController->GetHUD()))
 		{
 			AuraHUD->InitOverlay(AuraPlayerController, AuraPlayerState, AbilitySystemComponent, AttributeSet);
