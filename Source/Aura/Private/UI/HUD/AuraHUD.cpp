@@ -24,14 +24,18 @@ void AAuraHUD::InitOverlay(APlayerController* PC, APlayerState* PS, UAbilitySyst
 	// checkf: check condition of expression, if not (crash) show format string TEXT below
 	checkf(OverlayWidgetClass, TEXT("Overlay Widget Class uninitialized, please fill out BP_AuraHUD"));
 	checkf(OverlayWidgetControllerClass, TEXT("Overlay Widget Controller Class uninitialized, please fill out BP_AuraHUD"));
-	
+
+	// UserWidget
 	UUserWidget* Widget = CreateWidget<UUserWidget>(GetWorld(), OverlayWidgetClass);
 	OverlayWidget = Cast<UAuraUserWidget>(Widget);
-	
+
+	// WidgetController
 	const FWidgetControllerParams WidgetControllerParams(PC, PS, ASC, AS);
 	UOverlayWidgetController* WidgetController = GetOverlayWidgetController(WidgetControllerParams);
-	
+
+	// "UserWidget" <== "WidgetController"
 	OverlayWidget->SetWidgetController(WidgetController);
+	
 	WidgetController->BroadcastInitialValues();
 	
 	Widget->AddToViewport();
