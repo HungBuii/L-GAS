@@ -22,8 +22,9 @@ public:
 	TObjectPtr<UObject> WidgetController;
 	
 protected:
-	/* BlueprintImplementableEvent: is a way to declare functions in C++ where the function body is implemented entirely within the Blueprint, 
-									without any C++ code for the function itself.
+	/* 
+		BlueprintImplementableEvent: is a way to declare functions in C++ where the function body is implemented entirely within the Blueprint, 
+									 without any C++ code for the function itself.
 	*/
 	UFUNCTION(BlueprintImplementableEvent)
 	void WidgetControllerSet();
