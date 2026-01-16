@@ -55,9 +55,10 @@ void AAuraEffectActor::ApplyEffectToTarget(AActor* TargetActor, TSubclassOf<UGam
 	FGameplayEffectSpecHandle EffectSpecHandle = TargetASC->MakeOutgoingSpec(GameplayEffectClass, ActorLevel, EffectContextHandle);
 	
 	/* 
-	 * FActiveGameplayEffectHandle: This handle is required for things outside of FActiveGameplayEffectsContainer to refer to a specific active GameplayEffect
+	 * FActiveGameplayEffectHandle: This handle is required for things outside FActiveGameplayEffectsContainer to refer to a specific active GameplayEffect
 	 * 
-	 * ApplyGameplayEffectSpecToSelf(): Applies a previously created gameplay effect spec to this component */
+	 * ApplyGameplayEffectSpecToSelf(): Applies a previously created gameplay effect spec to this component 
+	 */
 	const FActiveGameplayEffectHandle ActiveEffectHandle = TargetASC->ApplyGameplayEffectSpecToSelf(*EffectSpecHandle.Data.Get()); 
 
 	const bool bIsInfinite = (EffectSpecHandle.Data.Get()->Def.Get()->DurationPolicy == EGameplayEffectDurationType::Infinite);
