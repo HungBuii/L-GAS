@@ -68,6 +68,7 @@ void UOverlayWidgetController::BindCallbacksToDependencies()
 					// GEngine->AddOnScreenDebugMessage(-1, 8.f, FColor::Blue, Msg);
                     				
 					const FUIWidget* Row = GetDataTableRowByTag<FUIWidget>(MessageWidgetDataTable, Tag);
+
 					MessageWidgetRowDelegate.Broadcast(*Row);
 				}
 			}
