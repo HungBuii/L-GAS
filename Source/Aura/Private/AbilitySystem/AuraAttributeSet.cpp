@@ -59,8 +59,8 @@ void UAuraAttributeSet::PreAttributeChange(const FGameplayAttribute& Attribute, 
 		NewValue = FMath::Clamp(NewValue, 0.f, GetMaxHealth());
 		// UE_LOG(LogTemp, Warning, TEXT("Health Changed: %f"), NewValue - GetHealth());
 		// UE_LOG(LogTemp, Warning, TEXT("Health Result: %f"), NewValue);
-		UE_LOG(LogTemp, Warning, TEXT("Current Health: %f"), Health.GetCurrentValue());
-		UE_LOG(LogTemp, Warning, TEXT("Base Health: %f"), Health.GetBaseValue());
+		// UE_LOG(LogTemp, Warning, TEXT("Current Health: %f"), Health.GetCurrentValue());
+		// UE_LOG(LogTemp, Warning, TEXT("Base Health: %f"), Health.GetBaseValue());
 	}
 	if (Attribute == GetManaAttribute())
 	{
@@ -134,8 +134,8 @@ void UAuraAttributeSet::PostGameplayEffectExecute(const struct FGameplayEffectMo
 	
 	Super::PostGameplayEffectExecute(Data);
 
-	FEffectProperties Props;
-	SetEffectProperties(Data, Props);
+	// FEffectProperties Props;
+	// SetEffectProperties(Data, Props);
 	
 	/*
 	 *	FGameplayEffectModCallbackData: A struct that provides detailed data when a Gameplay Effect changes an attribute (Gameplay Attribute) in the Gameplay Ability System (GAS).
