@@ -41,6 +41,13 @@ void UAuraAttributeSet::GetLifetimeReplicatedProps(TArray<class FLifetimePropert
 	DOREPLIFETIME_CONDITION_NOTIFY(UAuraAttributeSet, Mana, COND_None, REPNOTIFY_Always);
 }
 
+/*
+ *	Definition "BaseValue" vs "CurrentValue": 
+ *	
+ *	Permanent changes to the "BaseValue" come from "Instant" GameplayEffects whereas "Duration" and "Infinite" GameplayEffects 
+ *	change the "CurrentValue". "Periodic" GameplayEffects are treated like "Instant" GameplayEffects and change the "BaseValue".
+ */
+
 void UAuraAttributeSet::PreAttributeChange(const FGameplayAttribute& Attribute, float& NewValue)
 {
 	// Does not permanently change the modifier, just the value returned from querying the modifier (change CurrentValue)
@@ -52,6 +59,8 @@ void UAuraAttributeSet::PreAttributeChange(const FGameplayAttribute& Attribute, 
 		NewValue = FMath::Clamp(NewValue, 0.f, GetMaxHealth());
 		// UE_LOG(LogTemp, Warning, TEXT("Health Changed: %f"), NewValue - GetHealth());
 		// UE_LOG(LogTemp, Warning, TEXT("Health Result: %f"), NewValue);
+		UE_LOG(LogTemp, Warning, TEXT("Current Health: %f"), Health.GetCurrentValue());
+		UE_LOG(LogTemp, Warning, TEXT("Base Health: %f"), Health.GetBaseValue());
 	}
 	if (Attribute == GetManaAttribute())
 	{
@@ -127,13 +136,26 @@ void UAuraAttributeSet::PostGameplayEffectExecute(const struct FGameplayEffectMo
 
 	FEffectProperties Props;
 	SetEffectProperties(Data, Props);
-
+	
+	/*
+	 *	FGameplayEffectModCallbackData: A struct that provides detailed data when a Gameplay Effect changes an attribute (Gameplay Attribute) in the Gameplay Ability System (GAS).
+	 *	FGameplayEffectModCallbackData includes "EffectSpec (class FGameplayEffectSpec)", "EvaluatedData (class FGameplayModifierEvaluatedData)"
+	 *	
+	 *	FGameplayModifierEvaluatedData: Data that describes what happened in an attribute modification. This is passed to ability set callbacks
+	 *	EvaluatedData: The 'flat'/computed data to be applied to the target
+	 *	Attribute: What attribute was modified
+	 *	
+	 */
+	
 	if (Data.EvaluatedData.Attribute == GetHealthAttribute())
 	{
 		// GEngine->AddOnScreenDebugMessage(1, 3.f, FColor::Red, 
 		// 	FString::Printf(TEXT("Health: %f"), GetHealth()));
 		
 		SetHealth(FMath::Clamp(GetHealth(), 0.f, GetMaxHealth()));
+		// UE_LOG(LogTemp, Warning, TEXT("Current Health: %f"), GetHealthAttribute().GetGameplayAttributeData(this)->GetCurrentValue());
+		// UE_LOG(LogTemp, Warning, TEXT("Current Health: %f"), Health.GetCurrentValue());
+		// UE_LOG(LogTemp, Warning, TEXT("Base Health: %f"), Health.GetBaseValue());
 	}
 	if (Data.EvaluatedData.Attribute == GetManaAttribute())
 	{
