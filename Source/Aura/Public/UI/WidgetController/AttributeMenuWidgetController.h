@@ -22,7 +22,7 @@ public:
 	virtual void BroadcastInitialValues() override;
 	
 	UPROPERTY(BlueprintAssignable, Category="GAS|Attributes")
-	FAttributeInfoSignature AttributeInfoSignature;
+	FAttributeInfoSignature AttributeInfoDelegate;
 
 protected:
 	UPROPERTY(EditDefaultsOnly)
