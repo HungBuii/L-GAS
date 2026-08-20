@@ -52,7 +52,7 @@ void AAuraPlayerController::CursorTrace()
 	 *		- Do nothing
 	 */
 
-	if (LastActor == nullptr)
+	if (LastActor == nullptr) // LastActor is null
 	{
 		if (ThisActor != nullptr)
 		{
