@@ -8,7 +8,12 @@
 
 
 /* 
- * Ability System Component (ASC): Attaches to Actor to manage and execute Gameplay Abilities, 
+* Ability System Component (ASC):	is the bridge between Actors and the Gameplay Ability System. 
+ *									Any Actor that intends to interact with the Gameplay Ability System 
+ *									needs its own Ability System Component, or access to an Ability System Component 
+ *									on a PlayerState or Pawn.
+ * 
+ *									Attaches to Actor to manage and execute Gameplay Abilities, 
  *									and handles replication for multiplayer.
  */
 
